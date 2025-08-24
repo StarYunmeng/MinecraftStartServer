@@ -353,7 +353,7 @@ echo.
 echo %ESC%[36m[Now Loading]%ESC%[0m 少女祈祷中，请稍候...
 echo.
 :: 启动服务器
-echo %JAVA_PATH% %JVM_ARGS% -jar "%SERVER_JAR%" nogui
+cmd /c %JAVA_PATH% %JVM_ARGS% -jar "%SERVER_JAR%" nogui
 
 :: 检查退出代码
 if not errorlevel 1 (
@@ -375,4 +375,5 @@ if not errorlevel 1 (
 echo %ESC%[35m[结束]%ESC%[0m 服务器已停止运行，按任意键退出...
 pause >nul
 endlocal
+
 ::✂---------------------------------------------------------------------------------------------------------------------------------------------------------------
